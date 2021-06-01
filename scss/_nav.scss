@@ -3,6 +3,12 @@
 /**Navigation Bar**/
 
 
+
+a:link, a:visited, a:active{
+	text-decoration:none;
+	color:black;
+}
+
 li {
   display: inline;
   text-align: center;
