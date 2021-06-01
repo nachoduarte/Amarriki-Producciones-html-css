@@ -1,0 +1,58 @@
+
+html{
+	font-size: 100%;
+}
+
+
+/**Fonts y Text Classes**/
+
+#header{
+	font-family: 'Roboto', sans-serif;
+	font-weight:700;
+	
+}
+
+.fontStrong {
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+	font-size:$txtsize / 2; /**requiere breakpoint**/
+	line-height:$txtsize - 0.5rem;
+	letter-spacing:0.2rem;
+	word-spacing:0.2rem;
+	text-decoration: underline;
+
+}
+
+
+.fontReg {
+	font-family:"Roboto", sans-serif;
+	font-weight:500;
+	font-size:($txtsize / 2) - 0.5rem; /**requiere breakpoint**/
+	line-height:$txtsize - 1rem;
+	letter-spacing:0.2rem;
+	word-spacing:0.3rem;
+}
+
+.fontThin{  /**requiere breakpoint**/
+	font-family:"Roboto", sans-serif;
+	font-weight:400;
+	font-size:($txtsize / 2) - 0.7rem;
+	line-height:($txtsize / 2) - 0.7rem;
+	word-spacing:0.3rem;
+}
+
+.textCenter{
+	text-align:center;
+}
+
+.textRight{
+	text-align:right;
+}
+
+.bodyText{
+	color:$txtDark;
+}
+
+.span{
+	color:$txtGreen;
+}

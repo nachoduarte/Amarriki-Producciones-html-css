@@ -1,0 +1,34 @@
+
+
+
+/**Header**/
+
+header {
+	background-color:$bgDark; border: groove;
+
+}
+
+.cajaHeader{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	min-height:11.5vh;
+	width:100%;
+}
+
+.cajaEncabezado{ /**requiere breakpoint**/
+	margin-left:5px;
+	margin-top:8px;
+	align-self: center;
+	width:auto;
+}
+
+.cajaNav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	align-items: flex-end;
+	align-self: bottom;
+	width:auto;
+	padding:0;
+}

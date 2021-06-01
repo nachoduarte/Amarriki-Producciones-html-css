@@ -1,0 +1,535 @@
+@charset "UTF-8";
+/**Variables**/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+/**imports**/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+html {
+  font-size: 100%; }
+
+/**Fonts y Text Classes**/
+#header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; }
+
+.fontStrong {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  /**requiere breakpoint**/
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.2rem;
+  text-decoration: underline; }
+
+.fontReg {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  /**requiere breakpoint**/
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.3rem; }
+
+.fontThin {
+  /**requiere breakpoint**/
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  word-spacing: 0.3rem; }
+
+.textCenter {
+  text-align: center; }
+
+.textRight {
+  text-align: right; }
+
+.bodyText {
+  color: #000000; }
+
+.span {
+  color: #338a3e; }
+
+/**Navigation Bar**/
+li {
+  display: inline;
+  text-align: center; }
+
+.lista {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center; }
+
+.lista__links {
+  display: inline-block;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: auto;
+  /**requiere breakpoint**/
+  margin-right: 1%;
+  text-align: center;
+  line-height: auto;
+  background-image: linear-gradient(black, black);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .5s; }
+
+.lista__links--green:link, .lista__links--green:visited, .lista__links--green:active {
+  background-color: #98ee99;
+  color: #212529; }
+  .lista__links--green:link:hover, .lista__links--green:link focus, .lista__links--green:visited:hover, .lista__links--green:visited focus, .lista__links--green:active:hover, .lista__links--green:active focus {
+    background-size: 100% 2px; }
+
+/**Header**/
+header {
+  background-color: #66bb6a;
+  border: groove; }
+
+.cajaHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 11.5vh;
+  width: 100%; }
+
+.cajaEncabezado {
+  /**requiere breakpoint**/
+  margin-left: 5px;
+  margin-top: 8px;
+  align-self: center;
+  width: auto; }
+
+.cajaNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-self: bottom;
+  width: auto;
+  padding: 0; }
+
+/**Estilo Secciones y Artículos**/
+.bgColorDef {
+  background-color: #98ee99; }
+
+.bordes {
+  border-style: groove; }
+
+main {
+  padding: 5px;
+  margin: 0px;
+  background-color: #efebe9; }
+
+div section article iframe {
+  border: groove; }
+
+div section iframe {
+  border: groove; }
+
+div section img {
+  border: groove; }
+
+/**Cajas Index**/
+.indexDisplay {
+  /**requiere breakpoint**/
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.articleFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.caja1 {
+  height: auto;
+  width: auto;
+  margin: 30px;
+  padding: 15px 5px;
+  display: inline-block;
+  overflow: hide; }
+
+.caja1__articulo {
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 10px 1px;
+  display: inline-block;
+  overflow: hide; }
+
+.cajaMultimedia {
+  min-height: auto;
+  width: auto;
+  margin: 30px;
+  padding: 20px 10px;
+  display: inline-block;
+  overflow: hide; }
+
+/**Cajas Artistas**/
+.artistGrid {
+  /**requiere breakpoint**/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  justify-items: center; }
+
+.caja2 {
+  padding: 5px;
+  margin: 10px;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  overflow: hide;
+  border: 1px solid;
+  border-radius: 10px; }
+
+.caja2__contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+/**Caja ciclos**/
+.displayCiclos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.cajaSection3 {
+  width: 80%;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: center;
+  overflow: hide; }
+
+.tablasGrid {
+  padding: 0;
+  margin: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0.1rem;
+  grid-row-gap: 0.1rem; }
+
+.tablaStyle {
+  padding: 0;
+  margin: 0;
+  background-color: #98ee99;
+  border-style: groove;
+  color: black;
+  text-align: center; }
+
+#ciclomotor {
+  padding: 0;
+  margin: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  border-style: groove; }
+
+#trancapalanca {
+  padding: 0;
+  margin: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  border-style: groove; }
+
+/**Caja registro**/
+.displayReg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.cajaSection4 {
+  padding: 10px;
+  margin: 10px;
+  width: 65%;
+  display: inline-block;
+  overflow: hide; }
+
+.caja5 {
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  display: inline-block;
+  overflow: hide; }
+
+.caja5__videos {
+  /**requiere breakpoint**/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto; }
+
+/**Cajas Contacto**/
+.contactFlex {
+  /**requiere breakpoint**/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap; }
+
+.formFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+
+.cajaContact {
+  /**requiere breakpoint**/
+  height: 25%;
+  width: auto; }
+
+.cajaForm {
+  /**requiere breakpoint**/
+  width: auto; }
+
+fieldset, form {
+  font-family: "Roboto", sans-serif; }
+
+/**footer**/
+footer {
+  background-color: #66bb6a;
+  border: groove;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 33vh; }
+  footer section ul li img {
+    width: 20px;
+    /*requiere breakpoint**/ }
+
+.cajaFoot1 {
+  padding: 0px;
+  margin: 5px;
+  display: inline; }
+
+.cajaFoot2 {
+  position: relative;
+  right: 1rem;
+  padding: 0px; }
+
+#logo {
+  /**requiere breakpoint**/
+  border-style: solid;
+  color: black;
+  border-radius: 10px;
+  width: 65px;
+  position: relative;
+  left: 1.2rem;
+  margin-bottom: 5px; }
+
+#redesTitle {
+  /**requiere breakpoint**/
+  position: relative;
+  bottom: 0rem;
+  right: 0.5rem; }
+
+@keyframes textAlpha {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+a, h2, h3, p {
+  animation-name: textAlpha;
+  animation-duration: 1.5s; }
+
+/**Media Queries**/
+@media only screen and (min-width: 770px) {
+  .fontStrong {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+    text-decoration: underline; }
+  .fontReg {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem; }
+  .fontThin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    word-spacing: 0.3rem; }
+  #logo {
+    border-style: solid;
+    color: black;
+    border-radius: 10px;
+    width: 75px;
+    position: relative;
+    left: 1rem; }
+  footer section ul li img {
+    width: 25px; }
+  #redesTitle {
+    position: relative;
+    bottom: 1rem;
+    left: -0.5rem; }
+  .caja5 {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    overflow: hide; }
+  .caja5__videos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%; } }
+
+@media only screen and (min-width: 1200px) {
+  .fontStrong {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+    text-decoration: underline; }
+  .fontReg {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem; }
+  .fontThin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    word-spacing: 0.5rem; }
+  #logo {
+    border-style: solid;
+    color: black;
+    border-radius: 10px;
+    width: 90px;
+    position: relative;
+    left: 1.5rem; }
+  footer section ul li img {
+    width: 30px;
+    margin: 5px; }
+  #redesTitle {
+    position: relative;
+    bottom: 1rem;
+    left: 0rem; }
+  .cajaFoot2 {
+    position: relative;
+    right: 2rem;
+    padding: 0px; }
+  .lista {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right; }
+  .lista__links {
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 12.5%;
+    /**requiere breakpoint**/
+    margin-right: 1%;
+    text-align: center;
+    line-height: auto;
+    background-image: linear-gradient(black, black);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s; }
+  .cajaHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 11.5vh;
+    width: 100%; }
+  .cajaEncabezado {
+    padding-left: 5px;
+    align-self: center;
+    width: auto; }
+  .cajaNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-self: bottom;
+    width: 80%;
+    padding: 0; }
+  #header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem; }
+  .indexDisplay {
+    display: flex;
+    padding: 5px;
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+  .cajaMultimedia {
+    height: 40.5vh;
+    width: 40%;
+    margin: 30px;
+    padding: 20px 10px;
+    display: inline-block;
+    overflow: hide; }
+  .caja1 {
+    height: 50vh;
+    width: 50%;
+    margin: 30px;
+    padding: 15px 5px;
+    display: inline-block;
+    overflow: hide; }
+  .caja1__articulo {
+    height: 18vh;
+    width: auto;
+    margin: 0;
+    padding: 10px 1px;
+    display: inline-block;
+    overflow: hide; }
+  .artistGrid {
+    /**requiere breakpoint**/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    justify-items: center; }
+  .contactFlex {
+    /**requiere breakpoint**/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap; }
+  .cajaContact {
+    /**requiere breakpoint**/
+    height: 25%;
+    width: 50%; }
+  .cajaForm {
+    /**requiere breakpoint**/
+    width: 44%; }
+  #videoIndex {
+    width: 100%;
+    height: 30vh;
+    margin: 0px; }
+  .caja5__videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; } }

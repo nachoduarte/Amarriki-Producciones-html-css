@@ -1,0 +1,322 @@
+/**Variables**/
+$bgGreen:#98ee99;
+$bgDark:#66bb6a;
+$bgLight:#efebe9;
+$txtDark:#000000;
+$txtGreen:#338a3e;
+$txtsize:3rem;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+/**imports**/
+@import "_reset";
+@import "_fonts";
+@import "_nav";
+@import "_header";
+@import "_main";
+@import "_footer";
+
+@keyframes textAlpha{
+	from{
+		opacity:0
+	}
+
+	to{
+		opacity:1
+	}
+}
+
+a, h2, h3, p{
+	animation-name:textAlpha;
+	animation-duration:1.5s;
+}
+
+
+
+/**Media Queries**/
+
+@media only screen and (min-width: 770px){
+	
+	.fontStrong {
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+	font-size:($txtsize / 2) + 0.3rem; 
+	line-height:$txtsize - 0.5rem;
+	letter-spacing:0.2rem;
+	word-spacing:0.2rem;
+	text-decoration: underline;
+	}
+
+
+	.fontReg {
+	font-family:"Roboto", sans-serif;
+	font-weight:500;
+	font-size:($txtsize / 2) - 0.2rem; 
+	line-height:$txtsize - 1rem;
+	letter-spacing:0.2rem;
+	word-spacing:0.3rem;
+	}
+
+
+	.fontThin{ 
+	font-family:"Roboto", sans-serif;
+	font-weight:400;
+	font-size:($txtsize / 2) - 0.7rem;
+	line-height:($txtsize / 2) - 0.7rem;
+	word-spacing:0.3rem;
+	}
+
+	#logo{ 
+	border-style: solid; color: black;
+	border-radius: 10px;
+	width:75px;
+	position:relative;
+	left:1rem;
+	}
+
+	footer{
+	 	section{
+	 	 		ul{
+	 	 		 	li{
+	 	 		 	 	img{ 
+							width:25px;
+						}
+					}
+				}
+		}
+	}
+
+	#redesTitle{ 
+	position:relative;
+	bottom:1rem;
+	left:-0.5rem;
+	}
+
+
+	.caja5{  
+	width:90%;
+	padding:10px;
+	margin:10px;
+	display:inline-block;
+	overflow:hide;
+	}
+
+	.caja5__videos{ 
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	width:100%;
+	}
+
+}
+
+@media only screen and (min-width: 1200px){
+
+	.fontStrong {
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+	font-size:$txtsize - 1rem; 
+	line-height:$txtsize - 0.5rem;
+	letter-spacing:0.2rem;
+	word-spacing:0.2rem;
+	text-decoration: underline;
+	}
+
+	.fontReg {
+	font-family:"Roboto", sans-serif;
+	font-weight:500;
+	font-size:$txtsize / 2; 
+	line-height:$txtsize - 1rem;
+	letter-spacing:0.2rem;
+	word-spacing:0.3rem;
+	}
+
+	.fontThin{ 
+	font-family:"Roboto", sans-serif;
+	font-weight:400;
+	font-size:($txtsize / 2) - 0.5rem;
+	line-height:($txtsize / 2) - 0.2rem;
+	word-spacing:0.5rem;
+	}
+
+	#logo{ 
+	border-style: solid; color: black;
+	border-radius: 10px;
+	width:90px;
+	position:relative;
+	left:1.5rem;
+	}	
+
+	footer{
+	 		section{
+	 		 		ul{
+	 		 		 	li{
+	 		 		 	 	img{ 
+								width:30px;
+								margin:5px;
+							}
+						}
+					}
+			}
+	}	
+
+	#redesTitle{ 
+	position:relative;
+	bottom:1rem;
+	left:0rem;
+	}
+
+	.cajaFoot2{
+	position:relative;
+	right:2rem;
+	padding:0px;	
+	}
+
+
+
+	.lista {
+
+	padding: 0;
+	margin:0;
+	width: 100%;
+	text-align: right;
+	}
+
+	.lista__links{
+	
+
+	display: inline-block;
+	color:black;
+	text-transform:uppercase;
+	text-decoration:none;
+	width: 12.5%;   /**requiere breakpoint**/
+	margin-right: 1%;
+	text-align: center;
+  	line-height: auto;
+	background-image:linear-gradient(black, black);
+	background-position: 0% 100%;
+	background-repeat:no-repeat;
+	background-size:0% 2px;
+	transition:background-size .5s;
+	
+
+	}
+
+
+	.cajaHeader{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	min-height:11.5vh;
+	width:100%;
+	}
+
+	.cajaEncabezado{ 
+	padding-left:5px;
+	align-self: center;
+	width:auto;
+	}
+
+	.cajaNav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	align-items: flex-end;
+	align-self: bottom;
+	width:80%;
+	padding:0;
+	}
+
+
+
+	#header{
+	font-family: 'Roboto', sans-serif;
+	font-weight:700;
+	font-size:1.8rem;
+	}
+
+	.indexDisplay{   
+	display:flex;
+	padding:5px; 
+	flex-direction:row-reverse;
+	justify-content:space-between;
+	}
+
+	.cajaMultimedia{
+	height:40.5vh;
+	width:40%;
+	margin:30px;
+	padding:20px 10px;
+	display:inline-block;
+	overflow:hide;
+	}
+
+	.caja1{
+	height:50vh;
+	width:50%;
+	margin:30px;
+	padding:15px 5px;
+	display:inline-block;
+	overflow:hide;
+	}
+
+		.caja1__articulo{
+			height:18vh;
+			width:auto;
+			margin:0;
+			padding:10px 1px;
+			display:inline-block;
+			overflow:hide;
+		}
+
+	
+
+	.artistGrid{ 			/**requiere breakpoint**/
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-column-gap: 2rem;
+	grid-row-gap: 2rem;
+	justify-items: center;
+	}
+
+
+
+	.contactFlex{		/**requiere breakpoint**/
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+
+	}
+
+
+	.cajaContact{			/**requiere breakpoint**/
+	height:25%;
+	width:50%;
+	}
+
+
+
+	.cajaForm{				/**requiere breakpoint**/
+		
+		width:44%;
+
+	}
+
+
+	#videoIndex{
+		width:100%;
+		height:30vh;
+		margin:0px;
+	}
+
+	.caja5__videos{ 
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	width:100%;
+	}
+
+}

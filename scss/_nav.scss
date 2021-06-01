@@ -1,0 +1,51 @@
+
+
+/**Navigation Bar**/
+
+
+li {
+  display: inline;
+  text-align: center;
+
+}
+
+.lista {
+
+  padding:0;
+  margin:0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.lista__links{
+	
+
+	display: inline-block;
+	color:black;
+	text-transform:uppercase;
+	text-decoration:none;
+	width: auto;   /**requiere breakpoint**/
+	margin-right: 1%;
+	text-align: center;
+  	line-height: auto;
+	background-image:linear-gradient(black, black);
+	background-position: 0% 100%;
+	background-repeat:no-repeat;
+	background-size:0% 2px;
+	transition:background-size .5s;
+	
+
+}
+
+
+.lista__links--green:link, .lista__links--green:visited, .lista__links--green:active{
+	background-color:$bgGreen;
+	color:#212529;
+
+	&:hover, focus{
+		background-size:100% 2px;	
+	}
+}
+
