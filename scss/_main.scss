@@ -108,7 +108,7 @@ div{
 .caja2{
 	@include p-m(5px, 10px);
 	height:auto;
-	width:auto;
+	width:100%;
 	display:inline-block;
 	overflow:hide;
 	border:1px solid;

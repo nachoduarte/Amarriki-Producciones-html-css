@@ -15,7 +15,7 @@ footer {
 		ul{
 			li{
 				img{
-					width:20px; /*requiere breakpoint**/
+					width:auto; /*requiere breakpoint**/
 				}
 			}
 		}
@@ -39,7 +39,7 @@ footer {
 #logo{ /**requiere breakpoint**/
 	border-style: solid; color: black;
 	border-radius: 10px;
-	width:65px;
+	width:auto;
 	position:relative;
 	left:1.2rem;
 	margin-bottom:5px;
