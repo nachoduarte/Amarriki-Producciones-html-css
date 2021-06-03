@@ -17,7 +17,7 @@ html{
 	font-weight:500;
 	font-size:$txtsize / 2; /**requiere breakpoint**/
 	line-height:$txtsize - 0.5rem;
-	letter-spacing:0.2rem;
+	letter-spacing:0.1rem;
 	word-spacing:0.2rem;
 	text-decoration: underline;
 
@@ -29,13 +29,21 @@ html{
 	font-weight:500;
 	font-size:($txtsize / 2) - 0.5rem; /**requiere breakpoint**/
 	line-height:$txtsize - 1rem;
-	letter-spacing:0.2rem;
+	letter-spacing:0.1rem;
 	word-spacing:0.3rem;
 }
 
 .fontThin{  /**requiere breakpoint**/
 	font-family:"Roboto", sans-serif;
 	font-weight:400;
+	font-size:($txtsize / 2) - 0.7rem;
+	line-height:($txtsize / 2) - 0.7rem;
+	word-spacing:0.3rem;
+}
+
+.fontXthin{ /**requiere breakpoint**/
+	font-family:"Roboto", sans-serif;
+	font-weight:100;
 	font-size:($txtsize / 2) - 0.7rem;
 	line-height:($txtsize / 2) - 0.7rem;
 	word-spacing:0.3rem;
