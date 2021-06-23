@@ -162,7 +162,6 @@ div section img {
   justify-content: space-around; }
 
 .caja1 {
-  height: auto;
   width: auto;
   margin: 30px;
   padding: 15px 5px;
@@ -170,7 +169,6 @@ div section img {
   overflow: hide; }
 
 .caja1__articulo {
-  height: auto;
   width: auto;
   margin: 0;
   padding: 10px 1px;
@@ -178,7 +176,6 @@ div section img {
   overflow: hide; }
 
 .cajaMultimedia {
-  min-height: auto;
   width: auto;
   margin: 30px;
   padding: 20px 10px;
